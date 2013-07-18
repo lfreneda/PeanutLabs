@@ -2,12 +2,16 @@ PeanutLabs
 ==========
 
 C# .NET Integration with Peanut Labs social monetization ( http://www.peanutlabs.com )
-ASP.NET MVC and ASP.NET Webforms includeds
+
+Samples in ASP.NET MVC and ASP.NET Webforms includeds
 
 Getting to work
 ---------------------
 
-### 1. Register your system/application at http://www.peanutlabs.com/publisher/
+### 1. Register your system/application
+```
+http://www.peanutlabs.com/publisher/
+```
  
 ### 2. Configuration - configure settings @ web.config
 ```
