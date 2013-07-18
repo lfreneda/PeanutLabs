@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Awesomely</id>
+    <version>1.0.0.4</version>
+    <title>Awesomely</title>
+    <authors>lfreneda</authors>
+    <owners>lfreneda</owners>
+    <projectUrl>https://github.com/lfreneda/awesomely</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>"Awesomely" is personal library written in C#. It's like the Batman's utility belt in C# ! 
+      You can think of it as bunch of helpers, functions, code to help us out in our daily development.</description>
+    <releaseNotes>String { File, Format, Enconding, Hash } extensions, Enumerable extensions, OAuth w/ Facebook and Orkut.
+      Now with ObjectExtensions you can convert your anonymous object to dictionary just like the ASP.NET MVC does with route parameters and html attrs.</releaseNotes>
+    <copyright>Copyright 2013</copyright>
+    <tags>extensions oauth</tags>
+  </metadata>
+</package>
