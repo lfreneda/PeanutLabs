@@ -3,7 +3,7 @@ PeanutLabs
 
 C# .NET Integration with Peanut Labs social monetization ( http://www.peanutlabs.com )
 
-Samples in ASP.NET MVC and ASP.NET Webforms includeds
+Samples in ASP.NET MVC and ASP.NET Webforms included
 
 Getting to work
 ---------------------
