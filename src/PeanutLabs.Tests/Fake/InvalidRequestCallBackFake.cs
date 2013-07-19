@@ -11,9 +11,9 @@ namespace PeanutLabs.Tests.Fake
         public int Amt
         { get; set; }
 
-        public int OfferInvitationId
+        public string OfferInvitationId
         {
-            get { return 112; }
+            get { return "112"; }
         }
 
         public string Status { get; set; }
