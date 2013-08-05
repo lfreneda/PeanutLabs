@@ -4,18 +4,15 @@ namespace PeanutLabs.Configuration
 {
     public class PeanutLabsAppSettings : IPeanutLabsConfiguration
     {
-        public string ApplicationId
-        {
+        public string ApplicationId {
             get { return ConfigurationManager.AppSettings["peanutlabs.application.id"]; }
         }
 
-        public string ApplicationKey
-        {
+        public string ApplicationKey {
             get { return ConfigurationManager.AppSettings["peanutlabs.application.key"]; }
         }
 
-        public string BaseUrl
-        {
+        public string BaseUrl {
             get { return ConfigurationManager.AppSettings["peanutlabs.base.url"]; }
         }
     }

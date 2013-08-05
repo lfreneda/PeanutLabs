@@ -15,7 +15,7 @@ namespace PeanutLabs
             var httpRequest = HttpContext.Current.Request;
             Cmd = httpRequest["cmd"];
             UserId = httpRequest["userId"];
-            Amt = Convert.ToInt32(httpRequest["amt"]);
+            Amt = Convert.ToDecimal(httpRequest["amt"]);
             OfferInvitationId = httpRequest["offerInvitationId"];
             Status = httpRequest["status"];
             OidHash = httpRequest["oidHash"];
@@ -37,7 +37,7 @@ namespace PeanutLabs
 
         public string Cmd { get; protected set; }
         public string UserId { get; protected set; }
-        public int Amt { get; protected set; }
+        public decimal Amt { get; protected set; }
         public string OfferInvitationId { get; protected set; }
         public string Status { get; protected set; }
         public string OidHash { get; protected set; }

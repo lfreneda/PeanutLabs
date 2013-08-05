@@ -36,7 +36,7 @@ namespace PeanutLabs
 
         public void Process(IRequestCallback requestCallback)
         {
-            if (!ValidateRequest(requestCallback))
+            if (!ValidateRequest(requestCallback) && IsComplete(requestCallback))
             {
                 ProcessInvalidRequest(requestCallback);
                 WriteInvalidOutputToResponseStream();
@@ -44,6 +44,11 @@ namespace PeanutLabs
             }
 
             ProcessRequest(requestCallback);
+        }
+
+        private bool IsComplete(IRequestCallback requestCallback)
+        {
+            return requestCallback.Status == "C";
         }
 
         private void ProcessRequest(IRequestCallback requestCallback)

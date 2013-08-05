@@ -8,7 +8,7 @@ namespace PeanutLabs.Tests.Fake
         public string UserId
         { get; set; }
 
-        public int Amt
+        public decimal Amt
         { get; set; }
 
         public string OfferInvitationId

@@ -4,7 +4,7 @@ namespace PeanutLabs
     {
         string Cmd { get; }
         string UserId { get; }
-        int Amt { get; }
+        decimal Amt { get; }
         string OfferInvitationId { get; }
         string Status { get; }
         string OidHash { get; }
