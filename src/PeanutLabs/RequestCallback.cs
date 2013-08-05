@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Globalization;
 using System.Web;
 
 namespace PeanutLabs
@@ -15,7 +16,7 @@ namespace PeanutLabs
             var httpRequest = HttpContext.Current.Request;
             Cmd = httpRequest["cmd"];
             UserId = httpRequest["userId"];
-            Amt = Convert.ToDecimal(httpRequest["amt"]);
+            Amt = Convert.ToDecimal(httpRequest["amt"], new CultureInfo("en-US"));
             OfferInvitationId = httpRequest["offerInvitationId"];
             Status = httpRequest["status"];
             OidHash = httpRequest["oidHash"];
