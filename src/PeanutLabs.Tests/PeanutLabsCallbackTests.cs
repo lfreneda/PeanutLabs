@@ -16,14 +16,6 @@ namespace PeanutLabs.Tests
         }
 
         [Test]
-        public void a()
-        {
-            var callback = new FabianaTesteCallback();
-            var peanutLabsCallback = new PeanutLabsCallbackFake(new FabianaConfiguration());
-            var result = peanutLabsCallback.ValidateRequest(new InvalidRequestCallBackFake());
-        }
-
-        [Test]
         public void ValidateRequest_WhenRecevingAValidRequest_ShouldReturnTrue()
         {
             var peanutLabsCallback = new PeanutLabsCallbackFake(new PeanutLabsConfigurationFake());
