@@ -4,7 +4,7 @@ using PeanutLabs.Configuration;
 
 namespace PeanutLabs
 {
-    public abstract class PeanutLabsCallback
+    public abstract class PeanutLabsCallback : IPeanutLabsCallback
     {
         private readonly IPeanutLabsConfiguration _configuration;
 
@@ -36,14 +36,17 @@ namespace PeanutLabs
 
         public void Process(IRequestCallback requestCallback)
         {
-            if (!ValidateRequest(requestCallback) && IsComplete(requestCallback))
+            if (!ValidateRequest(requestCallback))
             {
                 ProcessInvalidRequest(requestCallback);
                 WriteInvalidOutputToResponseStream();
                 return;
             }
 
-            ProcessRequest(requestCallback);
+            if (IsComplete(requestCallback))
+            {
+                ProcessRequest(requestCallback);
+            }
         }
 
         private bool IsComplete(IRequestCallback requestCallback)
